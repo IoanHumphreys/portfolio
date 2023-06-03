@@ -45,12 +45,14 @@ export default function Home() {
         <p className="text-gray-700 text-lg mt-5 sm:text-lg md:text-md lg:text-xl text-center max-w-md md:max-w-xl lg:max-w-xl">A 16-year-old experienced developer from Wales, specializing in both front-end and back-end development.</p>
         {/* Buttons */}
         <div className="flex mt-6 space-x-4">
-        <button className="rounded-md px-4 py-2 bg-nav-purple text-white font-medium hover:bg-opacity-95 transition-all transform hover:-translate-y-1">
-          View Details
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-6 h-6 inline-block ml-2 mb-1">
-              <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 9V5.25A2.25 2.25 0 0013.5 3h-6a2.25 2.25 0 00-2.25 2.25v13.5A2.25 2.25 0 007.5 21h6a2.25 2.25 0 002.25-2.25V15m3 0l3-3m0 0l-3-3m3 3H9" />
-            </svg>
-          </button>
+        <a href="#skills">
+          <button className="rounded-md px-4 py-2 bg-nav-purple text-white font-medium hover:bg-opacity-95 transition-all transform hover:-translate-y-1">
+            View Details
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-6 h-6 inline-block ml-2 mb-1">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 9V5.25A2.25 2.25 0 0013.5 3h-6a2.25 2.25 0 00-2.25 2.25v13.5A2.25 2.25 0 007.5 21h6a2.25 2.25 0 002.25-2.25V15m3 0l3-3m0 0l-3-3m3 3H9" />
+              </svg>
+            </button>
+          </a>
           <a href="mailto:ioanhumphreysbusiness@yahoo.com">
             <button className="rounded-md px-4 py-2 border border-nav-purple text-slate-700 font-medium hover:bg-slate-100 hover:text-slate-900 transition-all transform hover:-translate-y-1">
             Let's Talk
@@ -370,18 +372,18 @@ export default function Home() {
       {/* FAQ */}
       <section>
         <div className="w-full px-4 pt-16">
-          <h1 className="text-center mb-5 text-2xl font-bold">FAQ</h1>
+          <h1 className="text-center mb-5 text-2xl font-bold">FAQ 🤔</h1>
           <div className="mx-auto w-full max-w-5xl mb-5 rounded-2xl bg-white p-2">
             <Disclosure>
               {({ open }) => (
                 <>
-                  <Disclosure.Button className="flex w-full justify-between rounded-lg bg-purple-100 px-3 lg:py-4 py-3 text-left text-md font-medium text-purple-900 hover:bg-purple-200 focus:outline-none focus-visible:ring focus-visible:ring-purple-500 focus-visible:ring-opacity-75">
+                  <Disclosure.Button className="flex w-full justify-between rounded-lg bg-gray-50 px-3 lg:py-4 py-3 text-left text-md font-medium text-gray-900 hover:bg-gray-200 focus:outline-none focus-visible:ring focus-visible:ring-gray-500 focus-visible:ring-opacity-75">
                     <span>How can I place an order?</span>
                     <BsChevronDown
-                      className={`${open ? 'rotate-180 transform' : ''} h-5 w-5 text-purple-500`}
+                      className={`${open ? 'rotate-180 transform' : ''} h-5 w-5 text-gray-500`}
                     />
                   </Disclosure.Button>
-                  <Disclosure.Panel className="px-4 pt-4 pb-2 text-sm lg:text-md text-gray-500">
+                  <Disclosure.Panel className="px-4 pt-4 pb-2 text-sm lg:text-md ">
                     If you are interested in placing an order, you can start by joining our Discord server.
                     Simply click on the following link <a href="https://discord.gg/aTAg953wJH" className="text-purple-500">discord server</a>.
                     Once you have completed the joining process, you will be able to access the <a href="https://discord.com/channels/1037945790271848529/1037957141975281704" className="text-purple-500">order channel</a> after successfully verifying your account. From there, you can easily place your order by following the instructions provided in the order channel.
@@ -394,10 +396,10 @@ export default function Home() {
             <Disclosure>
               {({ open }) => (
                 <>
-                  <Disclosure.Button className="flex w-full justify-between rounded-lg bg-purple-100 px-3 lg:py-4 py-3 text-left text-md font-medium text-purple-900 hover:bg-purple-200 focus:outline-none focus-visible:ring focus-visible:ring-purple-500 focus-visible:ring-opacity-75">
+                  <Disclosure.Button className="flex w-full justify-between rounded-lg bg-gray-50 px-3 lg:py-4 py-3 text-left text-md font-medium text-gray-900 hover:bg-gray-200 focus:outline-none focus-visible:ring focus-visible:ring-gray-500 focus-visible:ring-opacity-75">
                     <span>Is there a refund policy?</span>
                     <BsChevronDown
-                      className={`${open ? 'rotate-180 transform' : ''} h-5 w-5 text-purple-500`}
+                      className={`${open ? 'rotate-180 transform' : ''} h-5 w-5 text-gray-500`}
                     />
                   </Disclosure.Button>
                   <Disclosure.Panel className="px-4 pt-4 pb-2 text-sm lg:text-md text-gray-500">
@@ -414,10 +416,10 @@ export default function Home() {
             <Disclosure>
               {({ open }) => (
                 <>
-                  <Disclosure.Button className="flex w-full justify-between rounded-lg bg-purple-100 px-3 lg:py-4 py-3 text-left text-md font-medium text-purple-900 hover:bg-purple-200 focus:outline-none focus-visible:ring focus-visible:ring-purple-500 focus-visible:ring-opacity-75">
+                  <Disclosure.Button className="flex w-full justify-between rounded-lg bg-gray-50 px-3 lg:py-4 py-3 text-left text-md font-medium text-gray-900 hover:bg-gray-200 focus:outline-none focus-visible:ring focus-visible:ring-gray-500 focus-visible:ring-opacity-75">
                     <span>How can I contact you?</span>
                     <BsChevronDown
-                      className={`${open ? 'rotate-180 transform' : ''} h-5 w-5 text-purple-500`}
+                      className={`${open ? 'rotate-180 transform' : ''} h-5 w-5 text-gray-500`}
                     />
                   </Disclosure.Button>
                   <Disclosure.Panel className="px-4 pt-4 pb-2 text-sm lg:text-md text-gray-500">
@@ -431,9 +433,9 @@ export default function Home() {
             <Disclosure>
               {({ open }) => (
                 <>
-                  <Disclosure.Button className="flex w-full justify-between rounded-lg bg-purple-100 px-3 lg:py-4 py-3 text-left text-md font-medium text-purple-900 hover:bg-purple-200 focus:outline-none focus-visible:ring focus-visible:ring-purple-500 focus-visible:ring-opacity-75">
+                  <Disclosure.Button className="flex w-full justify-between rounded-lg bg-gray-50 px-3 lg:py-4 py-3 text-left text-md font-medium text-gray-900 hover:bg-gray-200 focus:outline-none focus-visible:ring focus-visible:ring-gray-500 focus-visible:ring-opacity-75">
                     <span>What payment methods do you accept?</span>
-                    <BsChevronDown className={`${open ? 'rotate-180 transform' : ''} h-5 w-5 text-purple-500`}/>
+                    <BsChevronDown className={`${open ? 'rotate-180 transform' : ''} h-5 w-5 text-gray-500`}/>
                   </Disclosure.Button>
                   <Disclosure.Panel className="px-4 pt-4 pb-2 text-sm lg:text-md text-gray-500">
                     Regarding Roblox UI projects, I accept payments through PayPal, CashApp, and Robux.
