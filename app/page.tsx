@@ -402,7 +402,7 @@ export default function Home() {
                       className={`${open ? 'rotate-180 transform' : ''} h-5 w-5 text-gray-500`}
                     />
                   </Disclosure.Button>
-                  <Disclosure.Panel className="px-4 pt-4 pb-2 text-sm lg:text-md text-gray-500">
+                  <Disclosure.Panel className="px-4 pt-4 pb-2 text-sm lg:text-md">
                     Unfortunately, refunds are not available for orders. However, I am dedicated to ensuring customer satisfaction
                     and addressing any concerns or issues that may arise. I will work closely with you to resolve the situation and make
                     sure you are happy with the outcome. Your satisfaction is my top priority, and I am committed to providing excellent
@@ -422,7 +422,7 @@ export default function Home() {
                       className={`${open ? 'rotate-180 transform' : ''} h-5 w-5 text-gray-500`}
                     />
                   </Disclosure.Button>
-                  <Disclosure.Panel className="px-4 pt-4 pb-2 text-sm lg:text-md text-gray-500">
+                  <Disclosure.Panel className="px-4 pt-4 pb-2 text-sm lg:text-md">
                     You can reach me by email at the following address <a href="mailto:ioanhumphreysbusiness@yahoo.com" className="text-purple-500">ioanhumphreysbusiness@yahoo.com</a>. Please feel free to contact me with any questions, concerns, or inquiries you may have. I will do my best to respond promptly and provide the assistance you need. I look forward to hearing from you!
                   </Disclosure.Panel>
                 </>
@@ -437,7 +437,7 @@ export default function Home() {
                     <span>What payment methods do you accept?</span>
                     <BsChevronDown className={`${open ? 'rotate-180 transform' : ''} h-5 w-5 text-gray-500`}/>
                   </Disclosure.Button>
-                  <Disclosure.Panel className="px-4 pt-4 pb-2 text-sm lg:text-md text-gray-500">
+                  <Disclosure.Panel className="px-4 pt-4 pb-2 text-sm lg:text-md">
                     Regarding Roblox UI projects, I accept payments through PayPal, CashApp, and Robux.
                     However, for web projects and Discord.js bot projects, I only accept payments via PayPal
                     and CashApp. If you have any further questions or need clarification, please feel free to reach out.
