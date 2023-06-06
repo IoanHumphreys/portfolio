@@ -454,9 +454,9 @@ export default function Home() {
         <p className="text-sm text-center mt-2">Designed and Created by Ioan</p>
         <p className="text-sm text-center mt-2">© 2023 All rights reserved</p>
         <div className="container mx-auto text-gray-700 text-center flex justify-center items-center space-x-4 mt-5">
-          <a href="#Discord" className="transition-all transform hover:-translate-y-2"><BsDiscord size="20"/></a>
-          <a href="#YouTube" className="transition-all transform hover:-translate-y-2"><AiFillYoutube size="20"/></a>
-          <a href="#TikTok" className="transition-all transform hover:-translate-y-2"><SiTiktok size="20"/></a>
+          <a href="https://discord.gg/aTAg953wJH" className="transition-all transform hover:-translate-y-2"><BsDiscord size="20"/></a>
+          <a href="https://www.youtube.com/@razlar2080/videos" className="transition-all transform hover:-translate-y-2"><AiFillYoutube size="20"/></a>
+          <a href="https://www.tiktok.com/@ioan_humphreys" className="transition-all transform hover:-translate-y-2"><SiTiktok size="20"/></a>
         </div>
       </footer>
     </div>
