@@ -1,6 +1,6 @@
 'use client';
 
-import {BsDiscord} from 'react-icons/bs'
+import {BsDiscord, BsYoutube} from 'react-icons/bs'
 import {AiFillYoutube} from 'react-icons/ai'
 import {SiTiktok} from 'react-icons/si'
 
@@ -322,7 +322,7 @@ export default function Home() {
             <div className="bg-white border border-gray-300 rounded-2xl p-5 mx-3 my-3 w-full sm:w-1/2 md:w-full lg:w-1/4">
               <h1 className="text-center font-medium">Vince</h1>
               <div className="flex items-center justify-center mt-2">
-                <div className="w-20 h-20 flex items-center justify-center mt-3">
+                <div className="w-20 h-20 flex items-center justify-center mt-9">
                   <img src="/images/vince.png" alt="Profile Picture" className="w-13 h-13 rounded-full" />
                 </div>
               </div>
@@ -334,17 +334,17 @@ export default function Home() {
               <p className="bg-panels-gray rounded-lg p-2 text-sm text-center mt-2 font-medium">10/10</p>
             </div>
 
-             {/* Voakies */}
+             {/* Toothpaste */}
              <div className="bg-white border border-gray-300 rounded-2xl p-5 mx-3 my-3 w-full sm:w-1/2 md:w-full lg:w-1/4">
-              <h1 className="text-center font-medium">Voakies</h1>
+              <h1 className="text-center font-medium">Toothpaste<br></br><p className="text-sm font-bold mt-1">400k Subscribers</p></h1>
               <div className="flex items-center justify-center mt-2">
                 <div className="w-20 h-20 flex items-center justify-center mt-3">
-                  <img src="/images/voakies.png" alt="Profile Picture" className="w-13 h-13 rounded-full" />
+                  <img src="/images/toothpaste.png" alt="Profile Picture" className="w-13 h-13 rounded-full" />
                 </div>
               </div>
               <div className="flex flex-row items-center justify-center bg-panels-gray p-3 rounded-lg mt-3">
                 <p className="text-sm text-center">
-                Fast and efficient. Furthermore, I got what I needed done perfectly also great communication.
+                Fixed my a problem I had with my UI in no time at all. Highly recommend.
                 </p>
               </div>
               <p className="bg-panels-gray rounded-lg p-2 text-sm text-center mt-2 font-medium">10/10</p>
@@ -353,7 +353,7 @@ export default function Home() {
              {/* Junior */}
              <div className="bg-white border border-gray-300 rounded-2xl p-5 mx-3 my-3 w-full sm:w-1/2 md:w-full lg:w-1/4">
               <h1 className="text-center font-medium">Junior</h1>
-              <div className="flex items-center justify-center mt-2">
+              <div className="flex items-center justify-center mt-8">
                 <div className="w-20 h-20 flex items-center justify-center mt-3">
                   <img src="/images/junior.png" alt="Profile Picture" className="w-13 h-13 rounded-full" />
                 </div>
