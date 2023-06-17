@@ -27,6 +27,7 @@ export default function Home() {
                     <Menu.Items className="absolute right-0 mt-2 py-2 w-40 bg-white border border-gray-200 divide-y divide-gray-100 rounded-lg shadow-lg focus:outline-none">
                       <Menu.Item><a href="https://discord.gg/aTAg953wJH" className="block px-4 py-2 text-sm text-gray-900">Discord</a></Menu.Item>
                       <Menu.Item><a href="https://www.youtube.com/channel/UCmpwEwTldiMCSrXLvRxWIyQ" className="block px-4 py-2 text-sm text-gray-900">YouTube</a></Menu.Item>
+                      <Menu.Item><a href="https://www.twitch.tv/real_razlar" className="block px-4 py-2 text-sm text-gray-900">Twitch</a></Menu.Item>
                       <Menu.Item><a href="https://www.tiktok.com/@ioan_humphreys" className="block px-4 py-2 text-sm text-gray-900">TikTok</a></Menu.Item>
                       <Menu.Item><a href="https://twitter.com/IoanHumphreys2" className="block px-4 py-2 text-sm text-gray-900">Twitter</a></Menu.Item>
                       <Menu.Item><a href="https://www.patreon.com/user/membership?u=70550621" className="block px-4 py-2 text-sm text-gray-900">Patreon</a></Menu.Item>
@@ -320,10 +321,10 @@ export default function Home() {
 
             {/* Vince */}
             <div className="bg-white border border-gray-300 rounded-2xl p-5 mx-3 my-3 w-full sm:w-1/2 md:w-full lg:w-1/4">
-              <h1 className="text-center font-medium">Vince</h1>
+              <h1 className="text-center font-medium">Vince<br></br><p className="text-sm font-bold mt-1">Developer</p></h1>
               <div className="flex items-center justify-center mt-2">
                 <div className="w-20 h-20 flex items-center justify-center mt-9">
-                  <img src="/images/vince.png" alt="Profile Picture" className="w-13 h-13 rounded-full" />
+                  <img src="/images/vince.png" alt="Profile Picture" className="w-13 h-13 rounded-full mb-10" />
                 </div>
               </div>
               <div className="flex flex-row items-center justify-center bg-panels-gray p-3 rounded-lg mt-3">
@@ -337,13 +338,13 @@ export default function Home() {
              {/* Toothpaste */}
              <div className="bg-white border border-gray-300 rounded-2xl p-5 mx-3 my-3 w-full sm:w-1/2 md:w-full lg:w-1/4">
               <h1 className="text-center font-medium">Toothpaste<br></br><p className="text-sm font-bold mt-1">400k Subscribers</p></h1>
-              <div className="flex items-center justify-center mt-2">
+              <div className="flex items-center justify-center mt-8">
                 <div className="w-20 h-20 flex items-center justify-center mt-3">
-                  <img src="/images/toothpaste.png" alt="Profile Picture" className="w-13 h-13 rounded-full" />
+                  <img src="/images/toothpaste.png" alt="Profile Picture" className="w-13 h-13 rounded-full mb-10" />
                 </div>
               </div>
               <div className="flex flex-row items-center justify-center bg-panels-gray p-3 rounded-lg mt-3">
-                <p className="text-sm text-center">
+                <p className="text-sm text-center mb-5">
                 Fixed my a problem I had with my UI in no time at all. Highly recommend.
                 </p>
               </div>
@@ -352,10 +353,10 @@ export default function Home() {
 
              {/* Junior */}
              <div className="bg-white border border-gray-300 rounded-2xl p-5 mx-3 my-3 w-full sm:w-1/2 md:w-full lg:w-1/4">
-              <h1 className="text-center font-medium">Junior</h1>
+              <h1 className="text-center font-medium">Junior<br></br><p className="text-sm font-bold mt-1">Developer</p></h1>
               <div className="flex items-center justify-center mt-8">
                 <div className="w-20 h-20 flex items-center justify-center mt-3">
-                  <img src="/images/junior.png" alt="Profile Picture" className="w-13 h-13 rounded-full" />
+                  <img src="/images/junior.png" alt="Profile Picture" className="w-13 h-13 rounded-full mb-10" />
                 </div>
               </div>
               <div className="flex flex-row items-center justify-center bg-panels-gray p-3 rounded-lg mt-3">
