@@ -27,8 +27,6 @@ export default function Home() {
                     <Menu.Items className="absolute right-0 mt-2 py-2 w-40 bg-white border border-gray-200 divide-y divide-gray-100 rounded-lg shadow-lg focus:outline-none">
                       <Menu.Item><a href="https://discord.gg/aTAg953wJH" className="block px-4 py-2 text-sm text-gray-900">Discord</a></Menu.Item>
                       <Menu.Item><a href="https://www.youtube.com/channel/UCmpwEwTldiMCSrXLvRxWIyQ" className="block px-4 py-2 text-sm text-gray-900">YouTube</a></Menu.Item>
-                      <Menu.Item><a href="https://www.twitch.tv/real_razlar" className="block px-4 py-2 text-sm text-gray-900">Twitch</a></Menu.Item>
-                      <Menu.Item><a href="https://www.tiktok.com/@ioan_humphreys" className="block px-4 py-2 text-sm text-gray-900">TikTok</a></Menu.Item>
                       <Menu.Item><a href="https://twitter.com/IoanHumphreys2" className="block px-4 py-2 text-sm text-gray-900">Twitter</a></Menu.Item>
                       <Menu.Item><a href="https://www.patreon.com/user/membership?u=70550621" className="block px-4 py-2 text-sm text-gray-900">Patreon</a></Menu.Item>
                     </Menu.Items>
@@ -286,7 +284,7 @@ export default function Home() {
                 <h1 className="text-center mt-2 font-medium">YouTube</h1>
               </div>
               <div className="flex flex-row items-center justify-center bg-panels-gray p-3 rounded-lg">
-                <p className="text-sm text-center">128 • 12k Views • 201 Comments</p>
+                <p className="text-sm text-center">178 Subscribers • 12k Views • 250 Comments</p>
               </div>
             </div>
 
