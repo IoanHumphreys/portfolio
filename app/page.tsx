@@ -284,7 +284,7 @@ export default function Home() {
                 <h1 className="text-center mt-2 font-medium">YouTube</h1>
               </div>
               <div className="flex flex-row items-center justify-center bg-panels-gray p-3 rounded-lg">
-                <p className="text-sm text-center">178 Subscribers • 12k Views • 250 Comments</p>
+                <p className="text-sm text-center">178 Subscribers • 12k Views</p>
               </div>
             </div>
 
@@ -295,7 +295,7 @@ export default function Home() {
                 <h1 className="text-center mt-2 font-medium">Discord</h1>
               </div>
               <div className="flex flex-row items-center justify-center bg-panels-gray p-3 rounded-lg">
-                <p className="text-sm text-center">90 Members • Smart Chatbot • 25+ Clients</p>
+                <p className="text-sm text-center">100+ Members • 25+ Clients</p>
               </div>
             </div>
 
@@ -306,10 +306,9 @@ export default function Home() {
                 <h1 className="text-center mt-2 font-medium">TikTok</h1>
               </div>
               <div className="flex flex-row items-center justify-center bg-panels-gray p-3 rounded-lg">
-                <p className="text-sm text-center">1.5k Followers • 700k Views • 76k Likes</p>
+                <p className="text-sm text-center">850k Views • 76k Likes</p>
               </div>
             </div>
-
           </div>
         </div>
 
