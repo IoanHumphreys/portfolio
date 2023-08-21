@@ -40,8 +40,10 @@ export default function Home() {
 
       {/* Hero Section */}
       <section className="flex flex-col items-center mt-64">
+
         <h1 className="text-3xl sm:text-4xl md:text-4xl lg:text-4xl font-bold text-gray-900 text-center">Hey, I'm Ioan</h1>
         <p className="text-gray-700 text-lg mt-5 sm:text-lg md:text-md lg:text-xl text-center max-w-md md:max-w-xl lg:max-w-xl">A 16-year-old experienced developer from Wales, specializing in both front-end and back-end development.</p>
+        
         {/* Buttons */}
         <div className="flex mt-6 space-x-4">
         <a href="#skills">
@@ -52,10 +54,10 @@ export default function Home() {
               </svg>
             </button>
           </a>
-          <a href="mailto:ioanhumphreysbusiness@yahoo.com">
+          <a href="mailto:ioanhumphreysbusiness@yahoo.com" target="_blank" rel="noopener noreferrer">
             <button className="rounded-md px-4 py-2 border border-nav-purple text-slate-700 font-medium hover:bg-slate-100 hover:text-slate-900 transition-all transform hover:-translate-y-1">
-            Let's Talk
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-6 h-6 inline-block ml-2 mb-1">
+              Let's Talk
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-6 h-6 inline-block ml-2 mb-1">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
               </svg>
             </button>
@@ -76,10 +78,9 @@ export default function Home() {
         <div className="max-w-md text-gray-700 mx-auto text-center md:text-center md:max-w-2xl lg:text-left">
           <h2 className="text-2xl sm:text-2xl lg:text-3xl font-bold text-gray-900 mb-4">About Me 👋</h2>
           <p className="text-lg">
-            Hello, I'm Ioan, a 16-year-old developer with 4+ years of front-end web development experience.
-            I specialize in creating visually appealing and user-friendly experiences. Additionally,
-            I'm skilled in back-end development, focusing on building Discord.js bot applications with MongoDB.
-            I'm passionate about coding and strive for exceptional results in every project.
+            Hello! I'm Ioan, a 16-year-old developer with a strong focus on front-end development and UI/UX design.
+            Over the last four years, I've been freelancing, creating Websites, and designing Graphical User Interfaces for large Game Studios.
+            My goal is to bring together design and technology to create seamless and captivating user experiences.
           </p>
         </div>
       </div>
@@ -284,7 +285,7 @@ export default function Home() {
                 <h1 className="text-center mt-2 font-medium">YouTube</h1>
               </div>
               <div className="flex flex-row items-center justify-center bg-panels-gray p-3 rounded-lg">
-                <p className="text-sm text-center">178 Subscribers • 12k Views</p>
+                <p className="text-sm text-center">220 Subscribers • 25k Views</p>
               </div>
             </div>
 
