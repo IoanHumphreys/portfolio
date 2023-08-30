@@ -87,7 +87,7 @@ export default function Home() {
     </section>
 
       {/* Resume Section */}
-      <section className="mt-20 sm:mt-80 mb-16 sm:mb-80 flex flex-col sm:flex-row sm:items-start justify-end">
+      <section className="mt-20 sm:mt-60 mb-16 sm:mb-80 flex flex-col sm:flex-row sm:items-start justify-end">
         <div className="flex-grow order-last sm:order-first sm:mt-0 sm:ml-96 md:ml-20 lg:ml-40">
           <div className="max-w-md text-gray-700 mx-auto text-center md:text-center md:max-w-2xl lg:text-left">
             <h2 className="text-2xl sm:text-2xl lg:text-3xl font-bold text-gray-900 mb-4">Resume 💼</h2>
@@ -280,41 +280,48 @@ export default function Home() {
 
             {/* YouTube */}
             <div className="bg-white border border-gray-300 rounded-2xl p-5 mx-3 my-3 w-full sm:w-1/2 md:w-full lg:w-1/4">
-              <div className="flex flex-col items-center mb-3">
-                <AiFillYoutube size="20" color="black" />
-                <h1 className="text-center mt-2 font-medium">YouTube</h1>
-              </div>
-              <div className="flex flex-row items-center justify-center bg-panels-gray p-3 rounded-lg">
-                <p className="text-sm text-center">220 Subscribers • 25k Views</p>
-              </div>
+              <a href="https://www.youtube.com/channel/UCmpwEwTldiMCSrXLvRxWIyQ">
+                <div className="flex flex-col items-center mb-3">
+                  <AiFillYoutube size="20" color="black" />
+                  <h1 className="text-center mt-2 font-medium">YouTube</h1>
+                </div>
+                <div className="flex flex-row items-center justify-center bg-panels-gray p-3 rounded-lg">
+                  <p className="text-sm text-center">220 Subscribers • 25k Views</p>
+                </div>
+              </a>
             </div>
 
             {/* Discord */}
             <div className="bg-white border border-gray-300 rounded-2xl p-5 mx-3 my-3 w-full sm:w-1/2 md:w-full lg:w-1/4">
-              <div className="flex flex-col items-center mb-3">
-                <BsDiscord size="20" color="black" />
-                <h1 className="text-center mt-2 font-medium">Discord</h1>
-              </div>
-              <div className="flex flex-row items-center justify-center bg-panels-gray p-3 rounded-lg">
-                <p className="text-sm text-center">100+ Members • 25+ Clients</p>
-              </div>
+              <a href="https://discord.gg/aTAg953wJH">
+                <div className="flex flex-col items-center mb-3">
+                  <BsDiscord size="20" color="black" />
+                  <h1 className="text-center mt-2 font-medium">Discord</h1>
+                </div>
+                <div className="flex flex-row items-center justify-center bg-panels-gray p-3 rounded-lg">
+                  <p className="text-sm text-center">100+ Members • 25+ Clients</p>
+                </div>
+              </a>
             </div>
 
             {/* TikTok */}
             <div className="bg-white border border-gray-300 rounded-2xl p-5 mx-3 my-3 w-full sm:w-1/2 md:w-full lg:w-1/4">
-              <div className="flex flex-col items-center mb-3">
-                <SiTiktok size="20" color="black" />
-                <h1 className="text-center mt-2 font-medium">TikTok</h1>
-              </div>
-              <div className="flex flex-row items-center justify-center bg-panels-gray p-3 rounded-lg">
-                <p className="text-sm text-center">850k Views • 76k Likes</p>
-              </div>
+              <a href="https://www.tiktok.com/@ioan_humphreys">
+                <div className="flex flex-col items-center mb-3">
+                  <SiTiktok size="20" color="black" />
+                  <h1 className="text-center mt-2 font-medium">TikTok</h1>
+                </div>
+                <div className="flex flex-row items-center justify-center bg-panels-gray p-3 rounded-lg">
+                  <p className="text-sm text-center">850k Views • 76k Likes</p>
+                </div>
+              </a>
             </div>
           </div>
         </div>
 
         {/* Reviews */}
-        <div className="container mx-auto">
+        <div className="container mx-auto text-center mt-40">
+          <h1 className="mb-10 text-3xl font-semibold">Client Endorsements 🌟</h1>
           <div className="flex flex-wrap justify-center">
 
             {/* Vince */}
