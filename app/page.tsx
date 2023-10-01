@@ -286,7 +286,7 @@ export default function Home() {
                   <h1 className="text-center mt-2 font-medium">YouTube</h1>
                 </div>
                 <div className="flex flex-row items-center justify-center bg-panels-gray p-3 rounded-lg">
-                  <p className="text-sm text-center">220 Subscribers • 25k Views</p>
+                  <p className="text-sm text-center">250 Subscribers • 30k Views</p>
                 </div>
               </a>
             </div>
