@@ -453,6 +453,7 @@ nav ul li a:hover::before {
     height: auto;
     margin-bottom: 1.5em;
     border-radius: 10em;
+    margin-right: 0.5em;
 }
 
 .achievements-link-card {
