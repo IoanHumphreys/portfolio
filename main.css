@@ -1,0 +1,798 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: 'Poppins';
+    background-color: #16161B;
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+    width: 0em;
+    height: 0em;
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+/* Navigation */
+header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: sticky; 
+    top: 0; 
+    background-color: #16161B; 
+    z-index: 100; 
+}
+
+nav {
+    padding: 4em;
+}
+
+nav ul {
+    display: flex;
+    gap: 4.1em;
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex: 1;
+    margin: 30em 0 35em;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    color: #F2F2F2;
+    font-weight: 700;
+    margin-bottom: 0.3em;
+}
+
+.hero p {
+    font-size: 1.6rem;
+    color: #D9D9D9;
+    font-weight: 400;
+    max-width: 35em;
+    margin-bottom: 2em;
+}
+
+/* Buttons */
+.action-buttons button {
+    padding: 1em 2em;
+    background-color: #3C2BFF;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: transform 0.2s;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.action-buttons button a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Let's Talk button */
+.action-buttons button:nth-child(2) {
+    background-color: transparent;
+    border: 1px solid #3C2BFF;
+    margin-left: 1em;
+}
+
+/* Icon inside buttons */
+.action-buttons button i {
+    margin-left: 10px;
+    color: #fff;
+}
+
+/* Hover effect for buttons */
+.action-buttons button:hover {
+    cursor: pointer;
+    transform: translateY(-2px);
+    text-decoration: none;
+}
+
+/* About section */
+.about {
+    display: flex;
+    margin-bottom: 25em;
+}
+
+.about-left {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.about-left h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #F2F2F2;
+}
+
+.about-left article p {
+    padding-top: 0.5em;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #D9D9D9;
+    max-width: 43em;
+}
+
+/* About right images */
+.about-right {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.image-left,
+.image-right {
+    width: 15em;
+    height: 30em;
+    border-radius: 3em;
+    margin-left: 15px;
+    transition: transform 0.2s;
+}
+
+.about-right img:hover {
+    transform: translateY(-5px);
+}
+
+.about-right img:last-child {
+    position: relative;
+    top: -20px;
+}
+
+/* Skills */
+.skills {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 25em;
+}
+
+.skills h2 {
+    display: flex;
+    justify-content: center;
+    font-size: 2.5rem;
+    font-weight: 600;
+    padding: 2em;
+    color: #fff;
+}
+
+.programming-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.programming-card {
+    background-color: #23232B;
+    border-radius: 20px;
+    padding: 20px;
+    flex: 0 0 calc(33.33% - 20px);
+    margin: 10px;
+    outline: transparent;
+    transition: outline 0.5s ease, transform 0.5s ease;
+}
+
+.programming-card:hover {
+    outline: 1px solid #43434d;
+}
+
+.programming-card h3 {
+    font-size: 1.5rem;
+    color: #FFFFFF;
+    font-weight: 600;
+    margin-bottom: 0.5em;
+}
+
+.programming-card p {
+    font-size: 1.3rem;
+    color: #FFFFFF;
+    margin-bottom: 1em;
+}
+
+.programming-card img {
+    width: 3em;
+    height: auto;
+    margin-bottom: 1.5em;
+    border-radius: 0.8em;
+}
+
+/* Resume section */
+.resume {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10em;
+}
+
+.resume-images {
+    display: flex;
+}
+
+.resume-images img {
+    width: auto;
+    height: 30em;
+    border-radius: 3em;
+    margin-bottom: 15px;
+    transition: transform 0.2s;
+}
+
+.resume-images img:last-child {
+    position: relative;
+    top: -20px;
+}
+
+/* Add the hover effect to both images */
+.resume-images img:hover {
+    transform: translateY(-5px);
+}
+
+.resume-right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 20em;
+}
+
+.resume-right h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 0.4em;
+}
+
+.resume-right p {
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: #D9D9D9;
+    margin-bottom: 2em;
+    max-width: 30em;
+}
+
+.resume-right button,
+.resume-right button a {
+    padding: 1em 1em;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+    background-color: #3C2BFF;
+}
+
+.resume-right button {
+    transition: transform 0.2s;
+}
+
+.resume-right button:hover {
+    transform: translateY(-5px);
+}
+
+.resume-right button a i {
+    margin-right: 1em;
+}
+
+/* Projects section */
+.projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 15em;
+}
+
+.projects h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    padding: 2em;
+    color: #fff;
+}
+
+.project-cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1000px; /* Adjust as needed */
+    margin-top: 2em;
+}
+
+.project-card {
+    background-color: #23232B;
+    border-radius: 20px;
+    padding: 20px;
+    flex: 0 0 calc(33.33% - 20px);
+    margin: 10px;
+    outline: transparent;
+    transition: outline 0.5s ease, transform 0.5s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: transform 0.2s ease;
+}
+
+.project-card:hover {
+    outline: 1px solid #43434d;
+}
+
+.project-card img {
+    width: 50px; 
+    height: 50px;
+    border-radius: 50%;
+    margin-bottom: 2em;
+}
+
+.project-card h3 {
+    font-size: 1.5rem;
+    color: #FFFFFF;
+    font-weight: 600;
+    margin-bottom: 1em;
+}
+
+.project-card p {
+    font-size: 1.3rem;
+    color: #e4e2e2;
+    font-weight: 400;
+    margin-bottom: 1em;
+    margin-bottom: 5em;
+}
+
+.learn-more-button {
+    margin-top: auto;
+    margin-bottom: 1em;
+}
+
+.learn-more-button a {
+    padding: 1em 7em;
+    background-color: #33333D;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: 400;
+    font-size: 1.1em;
+    text-decoration: none;
+
+}
+
+/* achievementss section */
+.achievements {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 25em;
+}
+
+.achievements h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    padding: 2em;
+    color: #fff;
+}
+
+.achievements-row {
+    display: flex;
+    flex-wrap: wrap; /* Allow achievementss to wrap on smaller screens */
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.achievements-card {
+    background-color: #23232B;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 10px;
+    outline: transparent;
+    transition: outline 0.5s ease, transform 0.5s ease;
+    flex: 0 0 calc(33.33% - 20px); /* Adjust the width to fit 3 cards in a row */
+}
+
+.achievements-card:hover {
+    outline: 1px solid #43434d;
+}
+
+.achievements-card h3 {
+    font-size: 1.5rem;
+    color: #FFFFFF;
+    font-weight: 600;
+    margin-bottom: 0.5em;
+}
+
+.achievements-card p {
+    font-size: 1.3rem;
+    color: #FFFFFF;
+    margin-bottom: 1em;
+}
+
+.achievements-card img {
+    width: 3em;
+    height: auto;
+    margin-bottom: 1.5em;
+    border-radius: 10em;
+}
+
+.achievements-link-card {
+    width: 3em;
+    height: auto;
+    border-radius: 10em;
+    transition: transform 0.2s ease;
+}
+
+.achievements-link-card:hover {
+    transform: translateY(-5px);
+
+}
+
+.social-media-card a {
+    text-decoration: none;
+}
+
+.social-media-card h3 {
+    margin-bottom: 1em;
+    font-weight: 600;
+}
+
+.social-media-text p {
+    background-color: #32323C;
+    padding: 1em;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.social-media-card i {
+ margin-right: 0.5em;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #16161B;
+    color: #fff;
+    padding: 2em 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-logo img {
+    max-width: 40px;
+    height: auto;
+    border-radius: 10em;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex; 
+}
+
+.footer-links ul li {
+    margin-right: 20px; /
+}
+
+.footer-links ul li:last-child {
+    margin-right: 0; 
+}
+
+.footer-links ul li a {
+    text-decoration: none;
+    color: #bbbbc0;
+    font-weight: 400;
+    font-size: 1.3rem;
+}
+
+.footer-social a {
+    text-decoration: none;
+    color: #cccccd;
+    margin-right: 20px;
+    font-size: 1.5em; 
+}
+
+.footer-bottom {
+    background-color: #111;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.scroll-fade {
+    opacity: 0; 
+    transform: translateY(20px);
+    transition: opacity 1.5s ease, transform 1.5s ease;
+}
+
+.scroll-fade.fade-in {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* IPad */
+@media screen and (max-width: 768px) {
+    header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .about {
+        padding: 5em;
+    }
+    .about-left article p {
+        font-size: 1.2rem;
+        max-width: 30em;
+    }
+    .about-right img {
+        width: 10em;
+        height: 20em;
+        border-radius: 2em;
+        margin-top: 1em;
+    }
+    .programming-card {
+        font-size: .5rem;
+    }
+    .resume {
+        padding: 5em;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+    .resume-right {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-left: 0;
+    }
+    .resume-right h2 {
+        font-size: 2.5rem;
+        font-weight: 600;
+        color: #fff;
+        margin-bottom: 0.4em;
+        text-align: center;
+    }
+    .resume-right p {
+        font-size: 1.6rem;
+        font-weight: 400;
+        color: #D9D9D9;
+        margin-bottom: 1em;
+        max-width: 30em;
+        text-align: center;
+    }
+    .resume-right button {
+        margin: 2em 0;
+    }
+    .resume-images img {
+        display: none;
+    }
+    .project-cards {
+        flex-direction: column;
+        align-items: center;
+        max-width: none; /* Remove max-width for the project cards */
+        margin-top: 2em;
+    }
+    .project-card {
+        flex: 0 0 calc(100% - 20px);
+        margin-right: 0;
+        margin-left: 0;
+        width: 50%; /* Make each card take full width */
+        margin-bottom: 20px; /* Add some space between cards */
+    }
+    .achievements-row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Modify flex property to make the cards full-width for screens narrower than 768px */
+    .achievements-card {
+        flex: 0 0 calc(100% - 20px);
+        margin-right: 0;
+        margin-left: 0;
+        width: 80%; /* Make each card take full width */
+        margin-bottom: 20px; /* Add some space between cards */
+    }
+}
+
+@media screen and (max-width: 375px) { 
+    header {
+        justify-content: center;
+    }
+    
+    .hero {
+        margin: 15em 0; /* Adjust the margin as needed */
+    }
+
+    .about {
+        padding: 2em;
+        margin-bottom: 10em; /* Adjust the margin as needed */
+    }
+
+    .about h2 {
+        font-size: 2rem; /* Adjust the font size as needed */
+        text-align: center;
+    }
+
+    .about-left article p {
+        font-size: 1.3rem;
+        max-width: 100%; /* Use the full width on smaller screens */
+    }
+
+    .about-right img {
+        width: 80%; /* Adjust the width as needed */
+        max-width: 300px; /* Set a maximum width for the image */
+        margin-top: 2em; /* Adjust the margin as needed */
+    }
+
+    .programming-card {
+        font-size: 1rem; /* Adjust the font size as needed */
+    }
+
+    .resume {
+        padding: 2em;
+        margin-bottom: 5em; /* Adjust the margin as needed */
+    }
+
+    .resume-right {
+        padding-left: 0;
+    }
+
+    .resume-images img {
+        width: 100%; /* Use the full width of the container */
+        max-width: none; /* Remove max-width */
+        margin-bottom: 2em; /* Adjust the margin as needed */
+    }
+
+    .project-card {
+        width: 100%; /* Use the full width of the container */
+        margin-bottom: 2em; /* Adjust the margin as needed */
+    }
+
+    .achievements-card {
+        width: 100%; /* Use the full width of the container */
+        margin-bottom: 2em; /* Adjust the margin as needed */
+    }
+}
+
+
+/* Mobile Devices */
+@media screen and (max-width: 480px) {
+    header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .hero {
+        margin-bottom: 25em;
+    }
+    .about {
+        padding: 5em;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        margin-bottom: 5em;
+    }
+    .about h2 {
+        font-size: 2.5rem;
+        font-weight: 600;
+        color: #F2F2F2;
+        margin-bottom: 1em;
+        text-align: center; /* Center the text */
+    }
+    .about-left article p {
+        font-size: 1.4rem;
+        width: 25em;
+        text-align: center;
+    }
+    .about-right img {
+        width: 10em;
+        height: 20em;
+        border-radius: 2em;
+        margin-top: 10em;
+    }
+    .programming-row {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: -15em;
+    }
+    .programming-card {
+        flex: 0 0 calc(100% - 20px);
+        margin-right: 0;
+        margin-left: 0;
+        width: 90%;
+    }
+    .resume {
+        padding: 5em;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+    .resume-images img {
+        display: none;
+    }
+    .resume-right {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-left: 0;
+    }
+    .resume-right h2 {
+        font-size: 2.5rem;
+        font-weight: 600;
+        color: #fff;
+        margin-bottom: 0.3em;
+        text-align: center;
+    }
+    .resume-right p {
+        font-size: 1.6rem;
+        font-weight: 400;
+        color: #D9D9D9;
+        margin-bottom: 1em;
+        max-width: 30em;
+        text-align: center;
+    }
+    .resume-right button {
+        margin: 2em 0;
+    }
+    .project-cards {
+        flex-direction: column;
+        align-items: center;
+        max-width: none; /* Remove max-width for the project cards */
+        margin-top: 2em;
+    }
+
+    .project-card {
+        flex: 0 0 calc(100% - 20px);
+        margin-right: 0;
+        margin-left: 0;
+        width: 80%; /* Make each card take full width */
+        margin-bottom: 20px; /* Add some space between cards */
+    }
+    .achievements-row {
+        flex-direction: column;
+        align-items: center;
+    }
+    /* Modify flex property to make the cards full-width for screens narrower than 768px */
+    .achievements-card {
+        flex: 0 0 calc(100% - 20px);
+        margin-right: 0;
+        margin-left: 0;
+        width: 80%; /* Make each card take full width */
+        margin-bottom: 20px; /* Add some space between cards */
+    }
+}
