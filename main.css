@@ -736,6 +736,38 @@ footer {
 
 }
 
+@media screen and (max-width: 428px) {
+    /* Adjust footer styles for iPhone 13 */
+    footer {
+        padding: 1em 0;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-logo img {
+        max-width: 30px; /* Adjust logo size */
+        margin-bottom: 0.5em;
+    }
+
+    .footer-links ul {
+        margin-bottom: 0.5em;
+    }
+
+    .footer-links ul li {
+        margin-right: 10px;
+    }
+
+    .footer-social a {
+        margin-right: 10px;
+        font-size: 1.2em;
+    }
+}
+
+
 @media screen and (max-width: 480px) {
     header {
         display: flex;
@@ -855,5 +887,29 @@ footer {
         margin-left: 0;
         width: 80%;
         margin-bottom: 20px;
+    }
+
+    .footer-social a {
+        text-decoration: none;
+        color: #cccccd;
+        margin-right: 10px;
+        font-size: 1.2em; 
+    }
+
+    .footer-content {
+        display: flex;
+        flex-direction: column; 
+        align-items: center;
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+
+    .footer-logo {
+        margin-bottom: 1em;
+    }
+
+    .footer-links {
+        margin-bottom: 1em;
     }
 }
