@@ -29,7 +29,7 @@ body {
     margin: 0 auto;
 }
 
-/* Navigation and Header */
+/* Navigation */
 header {
     display: flex;
     justify-content: flex-end;
@@ -83,7 +83,6 @@ nav ul li a {
     margin-bottom: 2em;
 }
 
-/* Buttons */
 .action-buttons button {
     padding: 1em 2em;
     background-color: #3C2BFF;
@@ -96,7 +95,6 @@ nav ul li a {
     text-decoration: none;
 }
 
-/* Let's Talk button */
 .action-buttons button:nth-child(2) {
     background-color: transparent;
     border: 1px solid #3C2BFF;
@@ -108,13 +106,11 @@ nav ul li a {
     text-decoration: none;
 }
 
-/* Icon inside buttons */
 .action-buttons button i {
     margin-left: 10px;
     color: #fff;
 }
 
-/* Hover effect for buttons */
 .action-buttons button:hover {
     cursor: pointer;
     transform: translateY(-2px);
@@ -148,7 +144,6 @@ nav ul li a {
     max-width: 43em;
 }
 
-/* About right images */
 .about-right {
     flex: 1;
     display: flex;
@@ -174,7 +169,7 @@ nav ul li a {
     top: -20px;
 }
 
-/* Skills */
+/* Skills Section */
 .skills {
     display: flex;
     flex-direction: column;
@@ -256,7 +251,6 @@ nav ul li a {
     top: -20px;
 }
 
-/* Add the hover effect to both images */
 .resume-images img:hover {
     transform: translateY(-5px);
 }
@@ -327,7 +321,6 @@ nav ul li a {
     justify-content: space-between;
     flex-wrap: wrap;
     max-width: 1000px;
-    /* Adjust as needed */
     margin-top: 2em;
 }
 
@@ -418,7 +411,6 @@ nav ul li a {
     outline: transparent;
     transition: outline 0.5s ease, transform 0.5s ease;
     flex: 0 0 calc(33.33% - 20px);
-    /* Adjust the width to fit 3 cards in a row */
 }
 
 .achievements-card:hover {
@@ -726,8 +718,6 @@ footer {
 
 }
 
-
-/* Mobile Devices */
 @media screen and (max-width: 480px) {
     header {
         display: flex;
