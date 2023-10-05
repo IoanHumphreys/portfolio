@@ -547,92 +547,84 @@ footer {
 /* Responsive Styles */
 @media screen and (max-width: 768px) {
     header {
-        padding: 2em;
-        justify-content: space-between;
-    }
-
-    nav ul {
-        flex-direction: column;
-        gap: 1em;
-    }
-
-    .hero {
-        margin: 20em 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     .about {
-        flex-direction: column;
-    }
-
-    .about-right {
-        order: -1;
-    }
-
-    .about-left h2 {
-        text-align: center;
+        padding: 5em;
     }
 
     .about-left article p {
-        text-align: center;
+        font-size: 1.2rem;
+        max-width: 30em;
     }
 
-    .about-right {
-        justify-content: center;
-        text-align: center;
-    }
-
-    .image-left,
-    .image-right {
-        width: 100%;
-    }
-
-    .programming-row {
-        flex-direction: column;
+    .about-right img {
+        width: 10em;
+        height: 20em;
+        border-radius: 2em;
+        margin-top: 1em;
     }
 
     .programming-card {
-        flex: 1;
-        margin: 10px 0;
-    }
-
-    .skills h2 {
-        text-align: center;
-    }
-
-    .skills p {
-        text-align: center;
+        font-size: .5rem;
     }
 
     .resume {
+        padding: 5em;
         flex-direction: column;
+        text-align: center;
+        align-items: center;
     }
 
     .resume-right {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         padding-left: 0;
-        text-align: center;
     }
 
     .resume-right h2 {
+        font-size: 2.5rem;
+        font-weight: 600;
+        color: #fff;
+        margin-bottom: 0.4em;
         text-align: center;
-        margin-bottom: 1em;
     }
 
-    .projects h2 {
+    .resume-right p {
+        font-size: 1.6rem;
+        font-weight: 400;
+        color: #D9D9D9;
+        margin-bottom: 1em;
+        max-width: 30em;
         text-align: center;
+    }
+
+    .resume-right button {
+        margin: 2em 0;
+    }
+
+    .resume-images img {
+        display: none;
     }
 
     .project-cards {
         flex-direction: column;
         align-items: center;
+        max-width: none;
+        margin-top: 2em;
     }
 
     .project-card {
-        flex: 1;
-        margin: 10px 0;
-    }
-
-    .achievements h2 {
-        text-align: center;
+        flex: 0 0 calc(100% - 20px);
+        margin-right: 0;
+        margin-left: 0;
+        width: 50%;
+        margin-bottom: 20px;
     }
 
     .achievements-row {
@@ -641,30 +633,219 @@ footer {
     }
 
     .achievements-card {
-        flex: 1;
-        margin: 10px 0;
+        flex: 0 0 calc(100% - 20px);
+        margin-right: 0;
+        margin-left: 0;
+        width: 80%;
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    header {
+        justify-content: center;
     }
 
-    footer {
-        padding: 1em 0;
+    .hero {
+        margin: 15em 0;
     }
 
-    .footer-logo img {
-        max-width: 30px;
+    .about {
+        padding: 2em;
+        margin-bottom: 10em;
     }
 
-    .footer-links ul {
-        flex-direction: column;
-        align-items: center;
+    .about h2 {
+        font-size: 2rem;
         text-align: center;
     }
 
-    .footer-links ul li {
-        margin-right: 0;
-        margin-bottom: 10px;
+    .about-left article p {
+        font-size: 1.3rem;
+        max-width: 100%;
     }
 
-    .footer-social {
-        margin-top: 20px;
+    .about-right img {
+        width: 80%;
+        max-width: 300px;
+        margin-top: 2em;
+    }
+
+    .programming-card {
+        font-size: 1rem;
+    }
+
+    .resume {
+        padding: 2em;
+        margin-bottom: 5em;
+    }
+
+    .resume-right {
+        padding-left: 0;
+    }
+
+    .resume-images img {
+        width: 100%;
+        max-width: none;
+        margin-bottom: 2em;
+    }
+
+    .project-card {
+        width: 100%;
+        margin-bottom: 2em;
+    }
+
+    .achievements-card {
+        width: 100%;
+        margin-bottom: 2em;
+    }
+    
+    .footer-social a {
+        text-decoration: none;
+        color: #cccccd;
+        margin-right: 10px;
+        font-size: 1.2em; 
+    }
+
+    .footer-content {
+        display: flex;
+        flex-direction: column; 
+        align-items: center;
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+
+    .footer-logo {
+        margin-bottom: 1em;
+    }
+
+    .footer-links {
+        margin-bottom: 1em;
+    }
+
+}
+
+
+/* Mobile Devices */
+@media screen and (max-width: 480px) {
+    header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hero {
+        margin-bottom: 25em;
+    }
+
+    .about {
+        padding: 5em;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        margin-bottom: 5em;
+    }
+
+    .about h2 {
+        font-size: 2.5rem;
+        font-weight: 600;
+        color: #F2F2F2;
+        margin-bottom: 1em;
+        text-align: center;
+    }
+
+    .about-left article p {
+        font-size: 1.4rem;
+        width: 25em;
+        text-align: center;
+    }
+
+    .about-right img {
+        width: 10em;
+        height: 20em;
+        border-radius: 2em;
+        margin-top: 10em;
+    }
+
+    .programming-row {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: -15em;
+    }
+
+    .programming-card {
+        flex: 0 0 calc(100% - 20px);
+        margin-right: 0;
+        margin-left: 0;
+        width: 90%;
+    }
+
+    .resume {
+        padding: 5em;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .resume-images img {
+        display: none;
+    }
+
+    .resume-right {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-left: 0;
+    }
+
+    .resume-right h2 {
+        font-size: 2.5rem;
+        font-weight: 600;
+        color: #fff;
+        margin-bottom: 0.3em;
+        text-align: center;
+    }
+
+    .resume-right p {
+        font-size: 1.6rem;
+        font-weight: 400;
+        color: #D9D9D9;
+        margin-bottom: 1em;
+        max-width: 30em;
+        text-align: center;
+    }
+
+    .resume-right button {
+        margin: 2em 0;
+    }
+
+    .project-cards {
+        flex-direction: column;
+        align-items: center;
+        max-width: none;
+        margin-top: 2em;
+    }
+
+    .project-card {
+        flex: 0 0 calc(100% - 20px);
+        margin-right: 0;
+        margin-left: 0;
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    .achievements-row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .achievements-card {
+        flex: 0 0 calc(100% - 20px);
+        margin-right: 0;
+        margin-left: 0;
+        width: 80%;
+        margin-bottom: 20px;
     }
 }
