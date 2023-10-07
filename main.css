@@ -636,6 +636,62 @@ nav ul li a:hover::before {
     justify-content: center;
 }
 
+/* FAQ section */
+.faq {
+    margin-top: 40px;
+    margin-bottom: 25em;
+}
+
+.faq h2 {
+    display: flex;
+    justify-content: center;
+    font-size: 2.5rem;
+    font-weight: 600;
+    padding: 2em;
+    color: #fff;
+}
+
+.faq-accordion {
+    display: flex;
+    flex-direction: column;
+}
+
+.faq-item {
+    margin-bottom: 10px;
+}
+
+.faq-toggle {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    width: 100%; 
+    background-color: transparent;
+    border-bottom: 1px solid #3f3f4f;
+    color: #e9e4e4;
+    font-weight: 600;
+    font-size: 1.4em;
+}
+
+.faq-icon {
+    font-size: 20px;
+}
+
+.faq-answer {
+    padding: 10px;
+    display: none;
+    color: #c8c5c5;
+    font-size: 1.3em;
+}
+
+.faq-answer a {
+    text-decoration: none;
+    color: #8b6dff;
+}
+
 /* Footer Styles */
 footer {
     background-color: #16161B;
@@ -808,6 +864,22 @@ footer {
         width: 45%; 
         margin-bottom: 2em;
     }
+
+    .faq {
+        margin-bottom: 10em;
+    }
+
+    .faq h2 {
+        font-size: 2rem; 
+    }
+
+    .faq-toggle {
+        font-size: 1.2em; 
+    }
+
+    .faq-answer {
+        font-size: 1.2em; 
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -912,6 +984,18 @@ footer {
     .services-card {
         width: 60%; 
         margin-bottom: 2em; 
+    }
+
+    .faq {
+        margin-bottom: 5em;
+    }
+
+    .faq-toggle {
+        font-size: 1.1em; 
+    }
+
+    .faq-answer {
+        font-size: 1.1em;
     }
 }
 
@@ -1188,6 +1272,22 @@ footer {
     .services-card {
         width: 85%; 
         margin-bottom: 2em; 
+    }
+
+    .faq {
+        margin-bottom: 2em;
+    }
+
+    .faq h2 {
+        font-size: 1.8rem;
+    }
+
+    .faq-toggle {
+        font-size: 1em; 
+    }
+
+    .faq-answer {
+        font-size: 1em; 
     }
 
     .footer-social a {

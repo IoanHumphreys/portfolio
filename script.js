@@ -44,3 +44,27 @@ document.addEventListener("mousemove", (event) => {
     trail.style.left = event.pageX + "px";
     trail.style.top = event.pageY + "px";
 });
+
+// FAQ
+// JavaScript for FAQ section
+const faqToggles = document.querySelectorAll(".faq-toggle");
+
+faqToggles.forEach((toggle) => {
+    toggle.addEventListener("click", () => {
+        const parent = toggle.parentElement;
+        const answer = parent.querySelector(".faq-answer");
+
+        if (answer.style.display === "block") {
+            answer.style.display = "none";
+            toggle.querySelector(".faq-icon").textContent = "+";
+        } else {
+            // Hide all other answers before showing this one
+            document.querySelectorAll(".faq-answer").forEach((faqAnswer) => {
+                faqAnswer.style.display = "none";
+            });
+
+            answer.style.display = "block";
+            toggle.querySelector(".faq-icon").textContent = "-";
+        }
+    });
+});
