@@ -38,3 +38,9 @@ navLinks.forEach(link => {
         scrollToSection(targetId);
     });
 });
+
+document.addEventListener("mousemove", (event) => {
+    const trail = document.querySelector(".trail");
+    trail.style.left = event.pageX + "px";
+    trail.style.top = event.pageY + "px";
+});

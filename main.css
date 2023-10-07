@@ -191,7 +191,8 @@ nav ul li a:hover::before {
 .skills {
     display: flex;
     flex-direction: column;
-    margin-bottom: 25em;
+    align-items: center;
+    margin-bottom: 15em;
 }
 
 .skills h2 {
@@ -328,6 +329,8 @@ nav ul li a:hover::before {
 }
 
 .projects h2 {
+    display: flex;
+    justify-content: center;
     font-size: 2.5rem;
     font-weight: 600;
     padding: 2em;
@@ -443,6 +446,8 @@ nav ul li a:hover::before {
 }
 
 .achievements h2 {
+    display: flex;
+    justify-content: center;
     font-size: 2.5rem;
     font-weight: 600;
     padding: 2em;
@@ -522,6 +527,115 @@ nav ul li a:hover::before {
     margin-right: 0.5em;
 }
 
+/* Services */
+.services-card-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10em;
+    gap: 2em;
+}
+
+.services h2 {
+    display: flex;
+    justify-content: center;
+    font-size: 2.5rem;
+    font-weight: 600;
+    padding: 2em;
+    color: #fff;
+}
+
+.services-card {
+    border-radius: 20px;
+    padding: 3em;
+    width: 30%;
+    outline: 1px solid #3f3f4f;
+    transition: outline 0.5s ease, transform 0.5s ease;
+}
+
+.services-card:hover {
+    outline: 1px solid #676776;
+}
+
+.services-title {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #FFFFFF;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.services-description {
+    color: #c8c5c5;
+    margin-bottom: 2em;
+    font-size: 1.2em;
+    text-align: left;
+}
+
+.services-price h1 {
+    color: #bdb9b9;
+    font-weight: 500;
+}
+
+.services-price p {
+    color: #e6e1e1;
+    font-weight: 600;
+    font-size: 3em;
+    margin-bottom: 1em;
+}
+
+.package-features {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 5em;
+}
+
+.package-features li {
+    font-size: 1.3rem;
+    color: #E1DDDD;
+    margin-bottom: 0.5em;
+    display: flex;
+    align-items: center;
+}
+
+.package-features li i {
+    font-size: 1.3rem;
+    color: #E1DDDD;
+    margin-right: 0.5em;
+}
+
+.services-button {
+    text-align: center;
+    margin-top: 2em;
+}
+
+.services-button button {
+    padding: 1em;
+    background-color: #23232B;
+    border-radius: 5px;
+    margin-right: 1em;
+    border: none;
+    width: 100%;
+    color: #fff;
+
+}
+
+.services-button button:hover {
+    cursor: pointer;
+}
+
+.services-button a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    font-size: 1.3rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 /* Footer Styles */
 footer {
     background-color: #16161B;
@@ -590,7 +704,112 @@ footer {
     transform: translateY(0);
 }
 
+@media screen and (max-width: 1150px) {
+    
+    .achievements-row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .achievements-card {
+        flex: 0 0 calc(100% - 20px);
+        margin-right: 0;
+        margin-left: 0;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .services-card-wrapper {
+        flex-direction: row; 
+    }
+
+    .services-card {
+        margin-bottom: 2em;
+    }
+}
+
 /* Responsive Styles */
+@media screen and (max-width: 900px) {
+
+    .about {
+        padding: 5em;
+    }
+
+    .about-left article p {
+        font-size: 1.2rem;
+        max-width: 30em;
+    }
+
+    .about-right img {
+        width: 10em;
+        height: 20em;
+        border-radius: 2em;
+        margin-top: 1em;
+    }
+
+    .resume {
+        padding: 5em;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .resume-right {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-left: 0;
+    }
+
+    .resume-right h2 {
+        font-size: 2.5rem;
+        font-weight: 600;
+        color: #fff;
+        margin-bottom: 0.4em;
+        text-align: center;
+    }
+
+    .resume-right p {
+        font-size: 1.6rem;
+        font-weight: 400;
+        color: #D9D9D9;
+        margin-bottom: 1em;
+        max-width: 30em;
+        text-align: center;
+    }
+
+    .resume-right button {
+        margin: 2em 0;
+    }
+
+    .resume-images img {
+        display: none;
+    }
+
+    .achievements-row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .achievements-card {
+        flex: 0 0 calc(100% - 20px);
+        margin-right: 0;
+        margin-left: 0;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .services-card-wrapper {
+        flex-direction: row; 
+    }
+
+    .services-card {
+        width: 45%; 
+        margin-bottom: 2em;
+    }
+}
+
 @media screen and (max-width: 768px) {
     header {
         display: flex;
@@ -669,7 +888,7 @@ footer {
         flex: 0 0 calc(100% - 20px);
         margin-right: 0;
         margin-left: 0;
-        width: 100%;
+        width: 80%;
         margin-bottom: 20px;
     }
 
@@ -684,6 +903,30 @@ footer {
         margin-left: 0;
         width: 80%;
         margin-bottom: 20px;
+    }
+
+    .services-card-wrapper {
+        flex-direction: column; 
+    }
+
+    .services-card {
+        width: 60%; 
+        margin-bottom: 2em; 
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .programming-row {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: -15em;
+    }
+
+    .programming-card {
+        flex: 0 0 calc(100% - 20px);
+        margin-right: 0;
+        margin-left: 0;
+        width: 90%;
     }
 }
 
@@ -748,6 +991,16 @@ footer {
         width: 100%;
         margin-bottom: 2em;
     }
+
+    .services-card-wrapper {
+        flex-direction: column; 
+
+    }
+
+    .services-card {
+        width: 85%; 
+        margin-bottom: 2em; 
+    }
     
     .footer-social a {
         text-decoration: none;
@@ -776,6 +1029,7 @@ footer {
 }
 
 @media screen and (max-width: 428px) {
+
     footer {
         padding: 1em 0;
     }
@@ -925,6 +1179,15 @@ footer {
         margin-left: 0;
         width: 80%;
         margin-bottom: 20px;
+    }
+
+    .services-card-wrapper {
+        flex-direction: column; 
+    }
+
+    .services-card {
+        width: 85%; 
+        margin-bottom: 2em; 
     }
 
     .footer-social a {
