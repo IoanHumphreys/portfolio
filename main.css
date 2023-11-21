@@ -55,7 +55,7 @@ nav ul li a {
     color: #fff;
     font-size: 1.3rem;
     font-weight: 500;
-    position: relative; 
+    position: relative;
 }
 
 nav ul li a::before {
@@ -65,14 +65,14 @@ nav ul li a::before {
     height: 2px;
     bottom: -2px;
     left: 0;
-    background-color: #5748ffcf; 
-    transform: scaleX(0); 
+    background-color: #175FFF;
+    transform: scaleX(0);
     transform-origin: center;
-    transition: transform 0.3s ease; 
+    transition: transform 0.3s ease;
 }
 
 nav ul li a:hover::before {
-    transform: scaleX(1); 
+    transform: scaleX(1);
 }
 
 /* Hero Section */
@@ -103,7 +103,7 @@ nav ul li a:hover::before {
 
 .action-buttons button {
     padding: 1em 2em;
-    background-color: #3C2BFF;
+    background-color: #175FFF;
     outline: none;
     border: none;
     border-radius: 5px;
@@ -115,7 +115,7 @@ nav ul li a:hover::before {
 
 .action-buttons button:nth-child(2) {
     background-color: transparent;
-    border: 1px solid #3C2BFF;
+    border: 1px solid #175FFF;
     margin-left: 1em;
 }
 
@@ -305,7 +305,7 @@ nav ul li a:hover::before {
     color: #fff;
     font-weight: 600;
     text-decoration: none;
-    background-color: #3C2BFF;
+    background-color: #175FFF;
 }
 
 .resume-right button {
@@ -354,7 +354,7 @@ nav ul li a:hover::before {
     transition: outline 0.5s ease, transform 0.5s ease;
     display: flex;
     flex-direction: column;
-    align-items: flex-start; 
+    align-items: flex-start;
     text-align: left;
     transition: transform 0.2s ease;
 }
@@ -378,7 +378,7 @@ nav ul li a:hover::before {
 }
 
 .project-description {
-    flex: 1; 
+    flex: 1;
 }
 
 .project-description p {
@@ -663,12 +663,12 @@ nav ul li a:hover::before {
 .faq-toggle {
     padding: 10px;
     display: flex;
-    justify-content: space-between; 
+    justify-content: space-between;
     align-items: center;
     cursor: pointer;
     border: none;
     outline: none;
-    width: 100%; 
+    width: 100%;
     background-color: transparent;
     border-bottom: 1px solid #3f3f4f;
     color: #e9e4e4;
@@ -689,7 +689,7 @@ nav ul li a:hover::before {
 
 .faq-answer a {
     text-decoration: none;
-    color: #8b6dff;
+    color: #407af7;
 }
 
 /* Footer Styles */
@@ -761,7 +761,7 @@ footer {
 }
 
 @media screen and (max-width: 1150px) {
-    
+
     .achievements-row {
         flex-direction: column;
         align-items: center;
@@ -776,7 +776,7 @@ footer {
     }
 
     .services-card-wrapper {
-        flex-direction: row; 
+        flex-direction: row;
     }
 
     .services-card {
@@ -857,11 +857,11 @@ footer {
     }
 
     .services-card-wrapper {
-        flex-direction: row; 
+        flex-direction: row;
     }
 
     .services-card {
-        width: 45%; 
+        width: 45%;
         margin-bottom: 2em;
     }
 
@@ -870,15 +870,15 @@ footer {
     }
 
     .faq h2 {
-        font-size: 2rem; 
+        font-size: 2rem;
     }
 
     .faq-toggle {
-        font-size: 1.2em; 
+        font-size: 1.2em;
     }
 
     .faq-answer {
-        font-size: 1.2em; 
+        font-size: 1.2em;
     }
 }
 
@@ -978,12 +978,12 @@ footer {
     }
 
     .services-card-wrapper {
-        flex-direction: column; 
+        flex-direction: column;
     }
 
     .services-card {
-        width: 60%; 
-        margin-bottom: 2em; 
+        width: 60%;
+        margin-bottom: 2em;
     }
 
     .faq {
@@ -991,7 +991,7 @@ footer {
     }
 
     .faq-toggle {
-        font-size: 1.1em; 
+        font-size: 1.1em;
     }
 
     .faq-answer {
@@ -1062,7 +1062,7 @@ footer {
         max-width: none;
         margin-bottom: 2em;
     }
-    
+
     .project-card {
         flex: 0 0 calc(100% - 20px);
         margin-right: 0;
@@ -1077,25 +1077,25 @@ footer {
     }
 
     .services-card-wrapper {
-        flex-direction: column; 
+        flex-direction: column;
 
     }
 
     .services-card {
-        width: 85%; 
-        margin-bottom: 2em; 
+        width: 85%;
+        margin-bottom: 2em;
     }
-    
+
     .footer-social a {
         text-decoration: none;
         color: #cccccd;
         margin-right: 10px;
-        font-size: 1.2em; 
+        font-size: 1.2em;
     }
 
     .footer-content {
         display: flex;
-        flex-direction: column; 
+        flex-direction: column;
         align-items: center;
         max-width: 1400px;
         margin: 0 auto;
@@ -1125,7 +1125,7 @@ footer {
     }
 
     .footer-logo img {
-        max-width: 30px; 
+        max-width: 30px;
         margin-bottom: 0.5em;
     }
 
@@ -1266,12 +1266,12 @@ footer {
     }
 
     .services-card-wrapper {
-        flex-direction: column; 
+        flex-direction: column;
     }
 
     .services-card {
-        width: 85%; 
-        margin-bottom: 2em; 
+        width: 85%;
+        margin-bottom: 2em;
     }
 
     .faq {
@@ -1283,23 +1283,23 @@ footer {
     }
 
     .faq-toggle {
-        font-size: 1em; 
+        font-size: 1em;
     }
 
     .faq-answer {
-        font-size: 1em; 
+        font-size: 1em;
     }
 
     .footer-social a {
         text-decoration: none;
         color: #cccccd;
         margin-right: 10px;
-        font-size: 1.2em; 
+        font-size: 1.2em;
     }
 
     .footer-content {
         display: flex;
-        flex-direction: column; 
+        flex-direction: column;
         align-items: center;
         max-width: 1400px;
         margin: 0 auto;
