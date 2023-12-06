@@ -245,6 +245,42 @@ nav ul li a:hover::before {
     border-radius: 0.8em;
 }
 
+/* Past Work */
+.past-work h2 {
+    display: flex;
+    justify-content: center;
+    font-size: 2.5rem;
+    font-weight: 600;
+    padding: 2em;
+    color: #fff;
+}
+
+.panel-cards {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10em;
+}
+
+.panel-card {
+    padding: 2em;
+    margin-right: 2em; 
+    background-color: #23232B;
+    border-radius: 2em;
+}
+
+.panel-card:last-child {
+    margin-right: 0; 
+}
+
+.panel-card img {
+    max-width: 100%;
+    height: auto;
+    max-height: 50em; 
+    margin: 0 auto;
+    display: block;
+    border-radius: 2em;
+}
+
 /* Resume section */
 .resume {
     display: flex;
@@ -907,6 +943,17 @@ footer {
 
     .programming-card {
         font-size: .5rem;
+    }
+
+    .panel-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .panel-card {
+        margin-right: 0;
+        margin-bottom: 2em;
+        width: 80%;
     }
 
     .resume {
