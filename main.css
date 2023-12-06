@@ -246,6 +246,10 @@ nav ul li a:hover::before {
 }
 
 /* Past Work */
+.past-work {
+    margin-bottom: 25em;
+}
+
 .past-work h2 {
     display: flex;
     justify-content: center;
@@ -258,7 +262,6 @@ nav ul li a:hover::before {
 .panel-cards {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 10em;
 }
 
 .panel-card {
