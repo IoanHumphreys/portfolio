@@ -189,7 +189,7 @@ nav ul li a:hover::before {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 15em;
+    margin-bottom: 25em;
 }
 
 .skills h2 {
@@ -240,45 +240,6 @@ nav ul li a:hover::before {
     height: auto;
     margin-bottom: 1.5em;
     border-radius: 0.8em;
-}
-
-/* Past Work */
-.past-work {
-    margin-bottom: 25em;
-}
-
-.past-work h2 {
-    display: flex;
-    justify-content: center;
-    font-size: 2.5rem;
-    font-weight: 600;
-    padding: 2em;
-    color: #fff;
-}
-
-.panel-cards {
-    display: flex;
-    justify-content: space-between;
-}
-
-.panel-card {
-    padding: 2em;
-    margin-right: 2em; 
-    background-color: #23232B;
-    border-radius: 2em;
-}
-
-.panel-card:last-child {
-    margin-right: 0; 
-}
-
-.panel-card img {
-    max-width: 100%;
-    height: auto;
-    max-height: 50em; 
-    margin: 0 auto;
-    display: block;
-    border-radius: 2em;
 }
 
 /* Resume section */
